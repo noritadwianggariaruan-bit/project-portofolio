@@ -102,8 +102,47 @@ body {
 
 /* CONTACT */
 .contact {
-  padding: 3rem 0;
-  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: #C8AAAA;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-item span {
+  word-break: break-word;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contact-item {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
 }
 
 /*RESUME */
@@ -157,3 +196,4 @@ body {
     display: block;
   }
 }
+
